@@ -1,0 +1,145 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+.section1{
+  
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    padding-bottom: 30px;
+    
+}
+.section2
+{
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.section1 a{
+    padding:10px 30px 10px 30px;
+    border:1px solid black;
+    border-radius:20px;
+    margin: 10px;
+    background-color: palevioletred;
+    font-size: 22px;
+}
+.section1 a:active,.section1 a:hover{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
+label{
+    font-size:20px;
+    font-weight:800;
+}
+.section2__border{
+    margin:30px 0px 30px 0px;
+}
+.btn-border-plus ,.btn-border-minus{
+   font-size:25px; 
+   margin-left: 45px;
+   padding: 0 10px 0 10px;
+   height:80%;
+   border:1px solid black;
+   border-radius:50%;
+   font-weight:800;
+   cursor: pointer;
+   user-select:none;
+}
+.btn-border-plus{
+    background-color: blueviolet;
+}
+.btn-border-minus{
+    background-color:rgb(219, 219, 134) ;
+}
+
+input{
+    outline:none;
+    padding:10px;
+    font-size:20px;
+    border-radius:20px;
+}
+input:active{
+    outline:none;
+}
+
+button{
+    padding:10px;
+    font-size:20px;
+    border-radius:20px;
+    font-weight:800;
+    background-color:cornflowerblue;
+}
+.section3__text{
+    margin:00px 0px 30px 0px;
+}
+.section1__btn .btn-reset ,.section1__btn .btn-code
+{
+    background-color:rgb(71, 219, 219);
+    font-size:20px;
+    font-weight:800;
+    user-select:none;
+
+}
+.section1__btn .btn-reset:hover  ,.section1__btn .btn-code:hover{
+    background-color:rgb(150, 214, 214);
+}
+.section3{
+
+}
+.section3 p{
+    width:60%;
+    
+    margin: 60px auto;
+    
+   
+}
+textarea{
+    background-color:rgb(167, 230, 230);
+    width:100%;
+    font-weight: 800;
+    height: 100%;
+    font-size: 15px;
+    padding:10px;
+    
+    
+}
+textarea:focus{
+    outline:none;
+}
+
+
+@media (max-width: 547px)
+{
+    .section1__btn,.section2__color
+    ,.section3__text
+    {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .section2__color label,.section2__color input,.section2__color button{
+        margin-top:10px;
+    }
+    .section2__border{
+        padding:10px;
+    }
+    .section2__border a{
+        margin:0px;
+    }
+    .section3__text label,.section3__text input{
+        margin-bottom: 15px;
+    }
+    textarea{
+        height:100px;
+    }
+}

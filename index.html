@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOM BUTTON DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="section1">
+        <h1>Custom Button</h1>
+        <div class="section1__btn">
+            <a class="btn-custon">TEXT</a>
+            <a class="btn-reset" onclick="handleReset()">Reset</a>
+            <a class="btn-code" onclick="handlecode()">Get Code</a>
+        </div>
+        
+    </div>
+    <div class="section2">
+        <h2 style="text-decoration: underline; line-height: 2.5rem">SETTINGS</h2>
+        <div class="section2__color">
+            <label>BackGround Color  > </label>
+            <input type="color" name="background"  value="#FF1493"/>
+            <!-- <input  type="text" name="color" placeholder="red" /> -->
+            <button class="btn-color" onclick="handlecolor()">Change</button>
+        </div>
+        <div class="section2__border">
+            <label>Border Radius > </label>
+            <a class="btn-border-plus" onclick="handleradius('+')">+</a>
+            <a class="btn-border-minus" onclick="handleradius('-')">-</a>
+            
+        </div>
+        <div class="section3__text">
+            <label>CUSTOM TEXT > </label>
+            <input type="text" name="text" placeholder="text"  />
+            <button class="btn-text" onclick="handletext()">Change</button>
+        </div>
+        <div class="section3__font">
+            <div class="section3__fontweight">
+                <label>Font Weight > </label>
+                <a class="btn-border-plus" onclick="handleFontweight('+')">+</a>
+                <a class="btn-border-minus" onclick="handleFontweight('-')">-</a>
+            </div>
+            <div class="section3__border">
+                <label>Border > </label>
+                <a class="btn-border-plus" onclick="handleborder('+')">+</a>
+                <a class="btn-border-minus" onclick="handleborder('-')">-</a>
+            </div>
+            <div class="section3__fontcolor">
+                <label>Font Color ></label>
+                <input type="color" name="fontcolor"  value="white"/>
+                <!-- <input  type="text" name="fontcolor" placeholder="red" /> -->
+                <button class="btn-fontcolor" onclick="handlefontcolor()">Change</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="section3">
+        <p class="section3__code"><textarea></textarea></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
